@@ -1,0 +1,73 @@
+h2 {
+  font-size: 30px;
+}
+
+.flex-titel-how-it-works {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+}
+
+.flex-titel-how-it-works svg {
+  width: 1rem;
+  margin-top: 0.4rem;
+}
+
+.how-it-works p {
+  font-size: 16px;
+  line-height: 1.5rem;
+  margin-left: 3.5rem;
+  max-width: 18rem;
+}
+
+/* MEDIA QUERY TABLET */
+@media (min-width: 768px) and (max-width: 1023px) {
+  h2 {
+    font-size: 50px;
+  }
+
+  .flex-titel-how-it-works {
+    margin-top: 5rem;
+
+  }
+
+  .flex-titel-how-it-works svg {
+    width: 3rem;
+    margin-top: 1.2rem;
+  }
+
+  .how-it-works p {
+    font-size: 25px;
+    line-height: 2rem;
+    margin-left: 5.5rem;
+    max-width: 38rem;
+  }
+}
+
+/* MEDIA QUERY DESKTOP*/
+@media (min-width: 1024px) {
+
+  h2 {
+    font-size: var(--title-size);
+  }
+
+  .flex-titel-how-it-works {
+    margin-top: 8rem;
+    margin-left: 10rem;
+  }
+
+  .flex-titel-how-it-works svg {
+    width: 5rem;
+    margin-top: 0.5rem;
+  }
+
+  .how-it-works p {
+    font-size: var(--sec-title-size);
+    line-height: 2rem;
+    margin-left: 16rem;
+    max-width: 50rem;
+  }
+}

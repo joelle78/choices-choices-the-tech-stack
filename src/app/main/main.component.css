@@ -1,0 +1,155 @@
+h3 {
+  font-size: 30px;
+}
+
+.flex-titel-available-stekjes {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 8rem;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+  padding-top: 3rem;
+}
+
+.flex-titel-available-stekjes svg {
+  width: 1rem;
+  margin-top: 0.4rem;
+}
+
+.available-stekjes p {
+  font-size: 16px;
+  line-height: 1.5rem;
+  margin-left: 3.5rem;
+  max-width: 18rem;
+}
+
+.container-recent-stekjes {
+  margin-top: 2.5rem;
+}
+
+.flex-wrapper-recent-stekjes {
+  display: flex;
+  margin-left: 3.5rem;
+  gap: 2rem;
+  overflow-x: scroll;
+  width: 80vw;
+}
+
+.flex-wrapper-recent-stekjes img {
+  width: 15rem;
+  border-radius: 5px;
+}
+
+.button-all-stekjes {
+  border: none;
+  padding: 0.2em 1em 0.5em;
+  background-color: var(--color-secundair);
+  /* border: 1px solid var(--color-primair); */
+  color: var(--main-dark);
+  border-radius: 2em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s;
+  width: max-content;
+  margin: 3em 3.5em 0;
+  margin-bottom: 0;
+}
+
+.button-all-stekjes:hover {
+  background-color: var(--color-primair);
+  color: white;
+  stroke: var(--main-dark);
+  /* border: 1px solid var(--color-secundair); */
+}
+
+.svg-button {
+  transition: 0.3s;
+  transform: translateY(5px) scale(0.8);
+  stroke: var(--main-dark);
+}
+
+.button-all-stekjes:hover .svg-button {
+  transform: translateX(5px) translateY(5px) scale(0.8);
+  /* fill: var(--main-offwhite); */
+  stroke: white;
+}
+
+/* MEDIA QUERY TABLET */
+@media (min-width: 768px) and (max-width: 1023px) {
+  h3 {
+    font-size: 50px;
+  }
+
+  .flex-titel-available-stekjes svg {
+    width: 3rem;
+    margin-top: 1.2rem;
+  }
+
+  .available-stekjes p {
+    font-size: 25px;
+    line-height: 2rem;
+    margin-left: 5.5rem;
+    max-width: 38rem;
+  }
+
+
+  .flex-wrapper-recent-stekjes {
+    margin-left: 5.5rem;
+  }
+
+  .flex-wrapper-recent-stekjes img {
+    width: 25rem;
+  }
+
+  .button-all-stekjes {
+    font-size: 1.5em;
+  }
+}
+
+/* MEDIA QUERY DESKTOP*/
+@media (min-width: 1024px) {
+  h3 {
+    font-size: var(--title-size);
+  }
+
+  .available-stekjes {
+    background-color: #f0f0f0;
+    height: 48rem;
+  }
+
+  .flex-titel-available-stekjes svg {
+    width: 5rem;
+    margin-top: 0.6rem;
+  }
+
+  .flex-titel-available-stekjes {
+    margin-top: 10rem;
+    margin-left: 10rem;
+  }
+
+  .available-stekjes p {
+    font-size: var(--sec-title-size);
+    line-height: 2rem;
+    margin-left: 16rem;
+    max-width: 50rem;
+  }
+
+  .flex-wrapper-recent-stekjes {
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-left: 5.5rem;
+    overflow-x: hidden;
+
+  }
+
+  .flex-wrapper-recent-stekjes img {
+    width: 18rem;
+  }
+
+  .button-all-stekjes {
+    font-size: 1em;
+    margin-left: 15.5rem;
+  }
+}

@@ -1,0 +1,54 @@
+<section class="available-stekjes">
+  <div class="flex-titel-available-stekjes">
+    <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M20.5 8.16988C23.8333 10.0944 23.8333 14.9056 20.5 16.8301L7.74999 24.1913C4.41666 26.1158 0.249999 23.7102 0.249999 19.8612L0.25 5.13877C0.25 1.28977 4.41667 -1.11584 7.75 0.808657L20.5 8.16988Z"
+        fill="#F26F21"
+      />
+    </svg>
+    <h3>Beschikbare stekjes</h3>
+  </div>
+  <p>
+    Dit zijn de meest recente stekjes die je kunt ruilen, en het enige wat je hoeft te doen is je
+    eigen stekje meenemen.
+  </p>
+
+  <div class="container-recent-stekjes">
+    <div class="flex-wrapper-recent-stekjes">
+      <div *ngFor="let item of data">
+        <h2>{{ item.attributes.latijnsenaam }}</h2>
+        <img src="{{ item.attributes.afbeelding.data[0].attributes.formats.large.url }}" alt="Plant Image">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <a href="/all_stekjes">
+      <button class="button-all-stekjes">
+        Bekijk alle stekjes<svg class="svg-button"
+                                width="22"
+                                height="20"
+                                viewBox="0 0 22 20"
+                                fill=""
+                                xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 10.2317H20M20 10.2317L11.3333 0.99997M20 10.2317L11.3333 19"
+          stroke=""
+          stroke-width="1.5"
+        />
+      </svg>
+      </button>
+    </a>
+  </div>
+
+
+</section>
+
+
+
+
+
+
+
+

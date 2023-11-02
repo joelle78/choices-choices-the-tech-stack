@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stekjes",
+  "info": {
+    "singularName": "stek",
+    "pluralName": "stekjes",
+    "displayName": "stekjes",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "latijnsenaam": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "afbeelding": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos",
+        "audios",
+        "files"
+      ]
+    }
+  }
+}
